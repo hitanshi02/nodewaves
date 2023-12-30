@@ -1,0 +1,141 @@
+.signUp_Page {
+    background-color: #0E0E0E;
+}
+
+.signUp_Page .nav-ellipse {
+    width: 70%;
+    height: 416px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.signUp_Page .left-ellipse {
+    width: 30%;
+    height: 85rem;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.signUp_Page .right-ellipse {
+    width: 30%;
+    height: 58rem;
+    position: absolute;
+    bottom: -4.4rem;
+    left: 0%;
+    display: none;
+    z-index: -1;
+}
+
+
+.signUp_Page .signup-label {
+    color: var(--color-LightWhite);
+    margin-top: 1rem;
+}
+
+.signUp_Form {
+    margin-top: 2.4rem;
+}
+
+.signUp_Page .signUp_Form .form-input {
+    margin-bottom: 1.6rem;
+}
+
+.signUp_Page .signUp_Form .form-control {
+    background-color: transparent;
+    border: 1px solid #656565;
+    font-size: 2.4rem;
+    color: var(--color-White);
+    height: 6rem;
+    padding: 0 2.4rem;
+    border-radius: 4px !important;
+    transition: 0.2s;
+}
+
+.signUp_Page .signUp_Form .form-control::placeholder {
+    color: var(--color-White);
+}
+
+.signUp_Page .signUp_Form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--color-LightWhite);
+}
+
+
+.signUp_Page .signUp_Form .form-input .btn {
+    margin-right: 1rem;
+    border: 1px solid var(--color-LightWhite);
+    padding: 0 2.4rem;
+    width: 15rem;
+    font-size: 2.4rem;
+    color: var(--color-White);
+    border-radius: 4px;
+}
+
+.signUp_Page .signUp_Form .form-input .btn.dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 2.4rem;
+    transform: translateY(-50%);
+}
+
+.signUp_Page .signUp_Form .form-input .dropdown-menu {
+    width: 15rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.signUp_Page .signUp_Form .form-input .dropdown-menu .dropdown-item {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.signUp_Page .signUp_Form .form-input .form-check {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    font-size: 2rem;
+    color: var(--color-White);
+}
+
+.signUp_Page .signUp_Form .form-input .form-check label {
+    margin-left: 1rem;
+}
+
+.signUp_Page .signUp_Form .form-input .form-check .form-check-input {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0;
+
+}
+
+.signUp_Page .signUp_Form .Submit-btn {
+    padding: 1.4rem 3rem;
+    font-size: 2rem;
+    border: 0;
+}
+
+
+.signUp_Page .signUp_Form .form-input #country {
+    margin-right: 1rem;
+    border: 1px solid var(--color-LightWhite);
+    padding: 0 1.4rem;
+    width: 15rem;
+    font-size: 2.4rem;
+    color: var(--color-White);
+    border-radius: 4px;
+    background-color: #0E0E0E;
+    outline: none;
+}
+
+/* .signUp_Page .signUp_Form .form-input .btn.dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 2.4rem;
+    transform: translateY(-50%);
+} */

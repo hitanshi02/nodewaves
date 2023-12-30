@@ -1,0 +1,429 @@
+.ecosystem_page .left-ellipse {
+    width: 30%;
+    height: 85rem;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.ecosystem_page .right-ellipse {
+    display: none;
+}
+
+/*  ecosystem-details */
+.ecosystem_page .ecosystem-details {
+    position: relative;
+}
+
+.ecosystem_page .ecosystem-details .main-box {
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.ecosystem_page .ecosystem-details .main-box .image-box {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    z-index: 5;
+}
+
+.ecosystem_page .ecosystem-details .main-box .image-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 140, 182, 0.1);
+    border-radius: 50%;
+}
+
+.ecosystem_page .ecosystem-details .main-box .line {
+    height: 90%;
+    width: 1px;
+    background-image: var(--Primary-Gradient);
+    display: block;
+}
+
+.ecosystem_page .ecosystem-details .main-box .horizontal-line {
+    height: 1px;
+    width: 80%;
+    background-image: var(--Primary-Gradient);
+    display: block;
+}
+
+.ecosystem_page .ecosystem-details .main-box .cross-line {
+    transform: translateY(-50%) rotate(120deg);
+    height: 160%;
+}
+
+.ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+    transform: translateY(-50%) rotate(60deg);
+    height: 160%;
+}
+
+.ecosystem_page .ecosystem-details .theme-btn {
+    width: 16.4rem;
+    height: 4rem;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.ecosystem_page .ecosystem-details .play-btn {
+    top: 2rem;
+    left: 8rem;
+}
+
+.ecosystem_page .ecosystem-details .stake-btn {
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);
+}
+
+.ecosystem_page .ecosystem-details .launch-btn {
+    bottom: 2rem;
+    left: 8rem;
+}
+
+.ecosystem_page .ecosystem-details .node-btn {
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ecosystem_page .ecosystem-details .market-btn {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ecosystem_page .ecosystem-details .move-btn {
+    top: 2rem;
+    right: 8rem;
+}
+
+.ecosystem_page .ecosystem-details .burn-btn {
+    top: 50%;
+    right: 8rem;
+    transform: translateY(-50%);
+}
+
+.ecosystem_page .ecosystem-details .farming-btn {
+    bottom: 2rem;
+    right: 8rem;
+}
+
+
+
+.ecosystem_page .containerX-two {
+    margin: 0 8.4rem !important;
+}
+
+.ecosystem_page .node-box-about {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 15px 0;
+}
+
+.ecosystem_page .node-box-about::-webkit-scrollbar {
+    height: 6px;
+}
+
+.ecosystem_page .node-box-about::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ecosystem_page .node-box-about::-webkit-scrollbar-thumb {
+    background-image: var(--Primary-Gradient);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+}
+
+.ecosystem_page .node-box-about .box-items-about {
+    min-width: 300px;
+    width: 300px;
+    background-color: #0e0e0e;
+    padding: 24px 16px;
+    border: 2px solid rgba(219, 19, 96, 1);
+    color: var(--color-White);
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-right: 2.4rem;
+}
+
+.ecosystem_page .node-box-about .box-items-about>.Trapezoid-top {
+    -webkit-clip-path: polygon(8% 0%, 93% 0, 100% 100%, 0 100%);
+    clip-path: polygon(8% 0%, 93% 0, 100% 100%, 0 100%);
+    height: 8px;
+    top: 0;
+
+}
+
+.ecosystem_page .node-box-about .box-items-about>.Trapezoid-top,
+.ecosystem_page .node-box-about .box-items-about>.Trapezoid-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 90%;
+    background-image: var(--Primary-Gradient);
+    z-index: -2;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.ecosystem_page .node-box-about .box-items-about:hover {
+    border: 2px solid transparent;
+    border-image: linear-gradient(174.47deg,
+            #e30f2e 8.83%,
+            rgba(0, 0, 0, 0) 50.13%,
+            #db1360 95.58%) 1 stretch;
+}
+
+.ecosystem_page .node-box-about .box-items-about>.Trapezoid-bottom {
+    bottom: 0;
+    display: block;
+    clip-path: polygon(0 0%, 100% 0%, 92% 100%, 8% 100%);
+    height: 15px;
+}
+
+
+.ecosystem_page .node-box-about .box-items-about:hover .Trapezoid-top {
+    top: -10px;
+    opacity: 1;
+}
+
+.ecosystem_page .node-box-about .box-items-about:hover .Trapezoid-bottom {
+    bottom: -15px;
+    opacity: 1;
+}
+
+.ecosystem_page .node-box-about .box-items-about h2 {
+    text-shadow: 0px 2px 16px rgba(255, 255, 255, 0.16);
+    font-weight: 600;
+    font-size: 4rem !important;
+}
+
+.ecosystem_page .node-box-about .box-items-about h4 {
+    font-size: 2rem !important;
+    line-height: 1.5em;
+    margin-bottom: 8px;
+}
+
+.ecosystem_page .company-logo-slider {
+    margin-top: 4rem;
+}
+
+
+.ecosystem_page .Community-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    background-color: #0e0e0e;
+    border-radius: 1.6rem;
+    border: 1px solid #e21036;
+}
+
+.ecosystem_page .Community-sec h3 {
+    width: calc(100% - 22rem);
+    font-family: "Aline", sans-serif;
+    color: var(--color-White);
+}
+
+.ecosystem_page .Discord-Btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 3rem;
+    font-size: 2.4rem;
+}
+
+.ecosystem_page .Discord-Btn .discord-img {
+    margin-right: 0.8rem;
+    width: 2.5rem;
+}
+
+
+
+
+/*=======================================================================
+                          media Query
+=======================================================================*/
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .ecosystem_page .ecosystem-details .main-box .cross-line {
+        transform: translateY(-50%) rotate(117deg);
+        height: 189%;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        transform: translateY(-50%) rotate(63deg);
+        height: 189%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .ecosystem_page .containerX-two {
+        margin: 0 6rem !important;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line {
+        transform: translateY(-50%) rotate(118deg);
+        height: 180%;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        transform: translateY(-50%) rotate(62deg);
+        height: 180%;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .ecosystem_page .containerX-two {
+        margin: 0 4rem !important;
+    }
+
+    .ecosystem_page .ecosystem-details .play-btn,
+    .ecosystem_page .ecosystem-details .stake-btn,
+    .ecosystem_page .ecosystem-details .launch-btn {
+        left: 4rem;
+    }
+
+    .ecosystem_page .ecosystem-details .move-btn,
+    .ecosystem_page .ecosystem-details .burn-btn,
+    .ecosystem_page .ecosystem-details .farming-btn {
+        right: 4rem;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line {
+        transform: translateY(-50%) rotate(124deg);
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        transform: translateY(-50%) rotate(56deg);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ecosystem_page .Community-sec {
+        padding: 4rem;
+    }
+
+    .ecosystem_page .Community-sec h3 {
+        width: 100%;
+    }
+
+    .ecosystem_page .Community-sec {
+        display: block;
+    }
+
+    .ecosystem_page .Discord-Btn {
+        margin-top: 2.4rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .ecosystem_page .ecosystem-details .main-box {
+        height: 45rem;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .image-box {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .ecosystem_page .ecosystem-details .theme-btn {
+        font-size: 12px;
+        width: 14rem;
+    }
+
+
+    .ecosystem_page .ecosystem-details .play-btn,
+    .ecosystem_page .ecosystem-details .stake-btn,
+    .ecosystem_page .ecosystem-details .launch-btn {
+        left: 0;
+    }
+
+    .ecosystem_page .ecosystem-details .move-btn,
+    .ecosystem_page .ecosystem-details .burn-btn,
+    .ecosystem_page .ecosystem-details .farming-btn {
+        right: 0rem;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .image-box::after {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .ecosystem_page .containerX-two {
+        margin: 0 3rem !important;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line,
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        height: 164%;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line {
+        transform: translateY(-50%) rotate(117deg);
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        transform: translateY(-50%) rotate(62deg);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .ecosystem_page .containerX-two {
+        margin: 0 0 0 2rem !important;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line,
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        height: 128%;
+    }
+
+    .ecosystem_page .ecosystem-details .theme-btn {
+        font-size: 10px;
+        width: 12rem;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line {
+        transform: translateY(-50%) rotate(127deg);
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        transform: translateY(-50%) rotate(52deg);
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line,
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        height: 116%;
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line {
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .ecosystem_page .ecosystem-details .main-box .cross-line-2 {
+        transform: translateY(-50%) rotate(45deg);
+    }
+}

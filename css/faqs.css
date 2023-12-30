@@ -1,0 +1,110 @@
+
+
+.faqs_page .left-ellipse {
+    width: 30%;
+    height: 85rem;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  
+  .faqs_page  .right-ellipse {
+    display: none;
+  }
+  .faqs_page .Questions-accordion .accordion-item {
+    padding: 3.2rem 0;
+    border-bottom: 1px solid #3d3d3d;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item:first-child {
+    padding-top: 0;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item:last-child {
+    border: 0 !important;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item,
+  .faqs_page .Questions-accordion .accordion-item .accordion-button {
+    background-color: transparent !important;
+    font-size: 2.6rem;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item .accordion-button {
+    color: var(--color-White);
+    padding: 0.6rem 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: calc(100% - 4rem);
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item .accordion-arrow {
+    width: 3rem;
+    margin-left: 1rem;
+    color: var(--color-LightWhite);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item .accordion-arrow svg {
+    width: 2.4rem;
+  }
+  
+  .faqs_page
+    .Questions-accordion
+    .accordion-item
+    .accordion-button:not(.collapsed)
+    + .accordion-arrow {
+    transform: rotate(-180deg);
+    color: #db1360;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item .accordion-body {
+    font-size: 2rem;
+    color: var(--color-LightWhite);
+  }
+  
+  .faqs_page .Questions-accordion .accordion-item .accordion-button::after {
+    display: none;
+  }
+  
+  .faqs_page .view-questions .ViewAll-Btn {
+    padding: 2rem 4rem;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    display: inline-block;
+    background-image: none;
+    border: 1px solid #e21036;
+    position: relative;
+    overflow: visible;
+    background-image: none;
+    background-color: #0e0e0e !important;
+    border-radius: 1.2rem 0 1.2rem 0;
+    color: #e21036;
+    font-weight: 600;
+  }
+  
+  /*
+  =======================================================================
+                          media Query
+  =======================================================================
+  */
+  
+  @media only screen and (max-width: 991px) {
+    .faqs_page .Questions-accordion .accordion-item:first-child {
+      padding-top: 3.2rem;
+    }
+  }
+  
+  
