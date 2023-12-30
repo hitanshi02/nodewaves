@@ -1,0 +1,40 @@
+.Play_Page {
+    background-color: #0E0E0E;
+}
+
+ 
+
+.Play_Page .left-ellipse {
+    width: 30%;
+    height: 85rem;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.Play_Page .right-ellipse {
+    display: none;
+}
+
+.Play_Page .Ecosyetem-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.Play_Page .Ecosyetem-content p {
+    font-size: 2.4rem;
+    color: var(--color-LightWhite);
+    margin-bottom: 4rem;
+}
+
+.Play_Page .Ecosyetem-content p:last-child {
+    margin-bottom: 0;
+}
+
+.font-red{ 
+    background: -webkit-linear-gradient(92.87deg, #E30F2E 0%, #DB1360 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
